@@ -13,5 +13,5 @@ jobs:
   print-tag:
     runs-on: ubuntu-latest
     steps:
-      - name: "Print tag to be used"
+      - name: "Print tag to be used ${{ github.ref_name }}"
         run: echo "Using prerelease tag "${{ github.ref_name }}
