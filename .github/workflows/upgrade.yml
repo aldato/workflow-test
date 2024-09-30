@@ -15,3 +15,6 @@ jobs:
     steps:
       - name: "Prerelease tag used: ${{ github.ref_name }}"
         run: exit 0
+
+      - name: Test another task
+        run: echo "Hello there"
